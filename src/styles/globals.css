@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+/* Heading */
+
+* {
+  font-family: 'Raleway', Helvetica, sans-serif
+}
+
+.background {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 30px;
+}
+
+.border {
+  border: 2px solid;
+  border-color: #666666;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("../assets/bg.svg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px;
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Text */
+
+
+.h1 .h2 .h3 .p {
+  color: #1e1e1e;
+}
+
+.heading {
+  font-size: 4em;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: 0.2em;
+}
+
+.subheading {
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  margin-bottom: 5em;
+}
+
+.directory-heading {
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  margin-top: 15px;
+}
+
+
+
+
