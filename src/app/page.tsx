@@ -1,6 +1,5 @@
-import Ellipse from "../assets/ellipse.svg";
 import Image from "next/image";
-import ProjectCard from "../components/ProjectCard";
+import {Selector, ProjectContainer} from "../components/Exports";
 
 export default function Home() {
   return (
@@ -10,11 +9,11 @@ export default function Home() {
           <div className="container-1">
             <div className="heading">Ethan Hansen</div>
 
-            <h3 className="subheading">Development | Design | Data</h3>
+            <h3 className="subheading">Development |   Design | Data</h3>
 
             <div className="directory">
-              <Image src={Ellipse} width={8} height={8} alt="Ellipse" />
-              <h2 className="directory-heading">work</h2>
+              <Image src="/ellipse.svg" width={8} height={8} alt="Ellipse" />
+              <h2 className="directory-heading">works</h2>
               <h2 className="directory-heading">experience</h2>
               <h2 className="directory-heading">about</h2>
               <h2 className="directory-heading">contact</h2>
@@ -37,12 +36,9 @@ export default function Home() {
       <div className="work-bg">
         <div className="border">
           <div className="flex-container-center">
-            <h1 className="works-title"> works </h1>
-            <div className="proj-container"> 
-              <ProjectCard /> 
-              <ProjectCard /> 
-              <ProjectCard /> 
-              <ProjectCard /> 
+            <h1 className="page-title"> works </h1>
+            <div>
+              <Selector />
             </div>
           </div>
         </div>

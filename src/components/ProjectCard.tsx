@@ -1,20 +1,41 @@
-import Image from 'next/image'
+import Image from "next/image";
 
-export default function ProjectCard() {
+interface CardProps {
+  title: string;
+  desc: string;
+  type: string;
+  stack: string;
+  imgsrc: string;
+  platform: string;
+}
 
-    return (
-        <div className="box">
-            {/* <Image src="" alt="Project Image" width={100} height={100} /> */}
-            <div className="black-box"></div>
-            <h2 className="proj-title"> PROJECT TITLE </h2>
-            <p className="p-text"> Project Description - this project solves this issue in this space </p>
-            <div>
-                <h3 className="proj-stack"> STACK: </h3>
-                <p className="p-text"> TypeScript, Next.js, React</p>
-            </div>
-            <div>
-                <h3> {'>'} See on GitHub</h3>
-            </div>
+const ProjectCard: React.FC<CardProps> = (props) => {
+  return (
+    <div className="box">
+      {props.imgsrc === "" ? (
+        <div className="black-box"></div>
+      ) : (
+        <div className="proj-img">
+            <Image
+            src={props.imgsrc}
+            alt="Project Image"
+            width={1000}
+            height={0}
+            className={'image'}
+            />
         </div>
-    )
-}   
+      )}
+      <h2 className="proj-title"> {props.title} </h2>
+      <p className="p-text"> {props.desc} </p>
+      <div>
+        <h3 className="proj-stack"> {props.type} </h3>
+        <p className="p-text"> {props.stack} </p>
+      </div>
+      <div>
+        <h3> {">"} See more details </h3>
+      </div>
+    </div>
+  );
+};
+
+export default ProjectCard;

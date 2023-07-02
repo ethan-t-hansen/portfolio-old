@@ -11,10 +11,13 @@
   /* border: 1px solid red; */
 }
 
+.full-width {
+  width: auto;
+}
+
 .flex-container-center {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -53,12 +56,13 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../assets/bg.svg");
+  background-image: url("../../public/bg.svg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   padding: 50px;
+  flex-wrap:wrap;
 }
 
 .directory {
@@ -99,6 +103,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: relative;
+  white-space: nowrap;
   margin-bottom: 0.2em;
 }
 
@@ -130,22 +135,57 @@
   position: relative;
 }
 
-/* Works Page */
-
-.works-title {
+.page-title {
   font-size: 3em;
-  font-weight: 100;
+  font-weight: 300;
   letter-spacing: 0;
   line-height: normal;
   position: relative;
-  margin-bottom: 0.2em;
+  margin-top: 2em;  
+  width: 100%;
+  text-align: center;
 }
+
+/* Works Page */
 
 .proj-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+}
+
+.selector-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  justify-items: center;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  position: relative;
+}
+
+.selector-wrap {
+  width: 100%;
+}
+
+.selector-button {
+  margin: 0.2em;
+}
+
+.selector-icon {
+  margin: 0.2em;
+}
+
+.selector-text {
+  font-size: 1em;
+  font-weight: 200;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
 }
 
 /* Project Card */
@@ -163,8 +203,24 @@
 
 .black-box {
   background-color: #1e1e1e;
+  min-width: 40vw;
+  min-height: 300px;
   width: 100%;
-  height: 24vw;
+  height: 50vh;
+}
+
+.proj-img {
+  min-width: 40vw;
+  min-height: 300px;
+  width: 100%;
+  height: 50vh;
+  position: 'relative'; 
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
 
 .proj-title {
@@ -174,8 +230,9 @@
   line-height: normal;
   position: relative;
   white-space: nowrap;
-  margin-top: 0.8em;
+  margin-top: 1em;
   margin-bottom: 0.8em;
+  text-transform: uppercase;
 }
 
 .proj-stack {
@@ -186,6 +243,7 @@
   position: relative;
   white-space: nowrap;
   margin-bottom: 0.5em;
+  text-transform: uppercase;
 }
 
 .p-text {
@@ -194,12 +252,25 @@
   letter-spacing: 0;
   line-height: normal;
   position: relative;
-  white-space: nowrap;
   margin-bottom: 1.2em;
 }
 
-.git-link {
+/* Design Container */
 
+.design-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+/* uiux Container */
+
+.uiux-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 
 
