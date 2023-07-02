@@ -39,7 +39,7 @@
   min-width: 30vw;
 }
 
-.work-bg {
+.works-bg {
   background-color: #f8f8f8;
   display: flex;
   align-items: center;
@@ -96,7 +96,7 @@
 .directory {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .container-1 {
@@ -148,7 +148,7 @@
   line-height: normal;
   position: relative;
   white-space: nowrap;
-  margin-top: 15px;
+  margin-top: 1.2em;
 }
 
 .about-heading {
@@ -210,6 +210,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: relative;
+  margin-top: 0.4em;
 }
 
 /* Project Card */
@@ -316,7 +317,7 @@ br {
   margin-top: 10px;
 }
 
-/* Design Container */
+/* Containers */
 
 .design-container {
   display: flex;
@@ -325,14 +326,47 @@ br {
   width: 100%;
 }
 
-/* uiux Container */
-
 .uiux-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
+
+/* Buttons */
+
+.directory button {
+  transition: all 0.3s ease;
+}
+
+.directory button:hover {
+  transform: translateX(5px);
+  color: #636363;
+}
+
+.selector-button button {
+  transition: all 0.3s ease;
+}
+
+.selector-button button:hover {
+  transform: translateY(2px);
+  color: #636363;
+}
+
+.option-icon {
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.option-icon-hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+
+
+
 
 
 

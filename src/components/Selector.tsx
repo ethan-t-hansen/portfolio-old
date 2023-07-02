@@ -20,9 +20,12 @@ export default function Selector() {
       <div className="selector-container">
         {options.map((option) => (
           <div className="selector-icon">
-            {selectedOption === option.id && (
-              <div key={option.name}>{option.icon}</div>
-            )}
+            <div className={selectedOption === option.id ? 'option-icon' : 'option-icon-hidden'} key={option.name}>
+              {option.icon}
+            </div>
+            {/* {selectedOption === option.id && (
+              <div className='option-icon' key={option.name}>{option.icon}</div>
+            )} */}
           </div>
         ))}
 
@@ -31,8 +34,9 @@ export default function Selector() {
             <button
               key={option.name}
               onClick={() => setSelectedOption(option.id)}
+              className="selector-text"
             > 
-              <p className="selector-text"> {option.name} </p>
+              {option.name}
             </button>
           </div>
         ))}

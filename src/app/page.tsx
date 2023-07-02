@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Selector, ProjectContainer } from "../components/Exports";
+import { Selector, ScrollButton } from "../components/Exports";
 
 export default function Home() {
   return (
@@ -11,12 +11,15 @@ export default function Home() {
 
             <h3 className="subheading">Development | Design | Data</h3>
 
+
+            <Image src="/ellipse.svg" width={8} height={8} alt="Ellipse" />
             <div className="directory">
-              <Image src="/ellipse.svg" width={8} height={8} alt="Ellipse" />
-              <h2 className="directory-heading">works</h2>
+              {/* <h2 className="directory-heading">works</h2>
               <h2 className="directory-heading">experience</h2>
-              <h2 className="directory-heading">about</h2>
-              <h2 className="directory-heading">contact</h2>
+              <h2 className="directory-heading">contact</h2> */}
+              <ScrollButton targetId="works" buttonText="works" />
+              <ScrollButton targetId="experience" buttonText="experience" />
+              <ScrollButton targetId="contact" buttonText="contact" />
             </div>
           </div>
 
@@ -34,7 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="work-bg">
+      <div className="works-bg" id="works">
         <div className="border-info">
           <div className="flex-container-center">
             <h1 className="page-title"> works </h1>
@@ -44,7 +47,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="exp-bg">
+      <div className="exp-bg" id="experience">
         <div className="border-info">
           <div className="flex-container-center">
             <h1 className="page-title"> experience </h1>
