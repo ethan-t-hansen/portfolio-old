@@ -10,9 +10,9 @@ export default function Selector() {
   const [selectedOption, setSelectedOption] = useState("coding");
 
   const options = [
-    { name: "Coding Projects", id: "coding", icon: Dot },
-    { name: "UI/UX", id: "ui", icon: Dot },
-    { name: "Design Pieces", id: "design", icon: Dot },
+    { name: "Coding Projects", key: "1", id: "coding", icon: Dot },
+    { name: "UI/UX", key: "2", id: "ui", icon: Dot },
+    { name: "Design Pieces", key: "3", id: "design", icon: Dot },
   ];
 
   return (
