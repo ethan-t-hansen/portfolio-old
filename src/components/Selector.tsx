@@ -10,16 +10,16 @@ export default function Selector() {
   const [selectedOption, setSelectedOption] = useState("coding");
 
   const options = [
-    { name: "Coding Projects", key: "1", id: "coding", icon: Dot },
-    { name: "UI/UX", key: "2", id: "ui", icon: Dot },
-    { name: "Design Pieces", key: "3", id: "design", icon: Dot },
+    { name: "Coding Projects", id: "coding", icon: Dot },
+    { name: "UI/UX", id: "ui", icon: Dot },
+    { name: "Design Pieces", id: "design", icon: Dot },
   ];
 
   return (
     <div className="full-width">
       <div className="selector-container">
         {options.map((option) => (
-          <div className="selector-icon">
+          <div className="selector-icon" key={option.id}>
             <div className={selectedOption === option.id ? 'option-icon' : 'option-icon-hidden'} key={option.name}>
               {option.icon}
             </div>
@@ -30,7 +30,7 @@ export default function Selector() {
         ))}
 
         {options.map((option) => (
-          <div className="selector-button">
+          <div className="selector-button" key={option.id}>
             <button
               key={option.name}
               onClick={() => setSelectedOption(option.id)}

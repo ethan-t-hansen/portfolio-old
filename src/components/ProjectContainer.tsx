@@ -1,4 +1,4 @@
-import { ProjectCard } from "../components/Exports";
+import { ProjectCard } from "./Exports";
 
 function ProjectContainer() {
   return (
