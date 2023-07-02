@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { ProjectContainer, DesignContainer, UIUXContainer } from "./Exports";
 
 export default function Selector() {
-  const Dot = <Image src="/ellipse.svg" width={6} height={6} alt="Ellipse" />;
+  const Dot = <Image src="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338779/ellipse_hc8bka.svg" width={6} height={6} alt="Ellipse" />;
 
   const [selectedOption, setSelectedOption] = useState("coding");
 

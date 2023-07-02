@@ -11,7 +11,7 @@ function ProjectContainer() {
           in the dish."
         type="Stack:"
         stack="TypeScript, Next.js, React, Express, MongoDB Atlas"
-        imgsrc="/u-trition.png"
+        imgsrc="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338782/u-trition_hyuqno.png"
         platform="GitHub"
         link="https://github.com/ethan-t-hansen/u-trition"
       />
@@ -22,7 +22,7 @@ function ProjectContainer() {
           and viewing workouts, as well as user authentication with encryption."
         type="Stack:"
         stack="JavaScript, Node.js, React, Express, MongoDB Atlas"
-        imgsrc="/workout-manager.png"
+        imgsrc="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338782/workout-manager_fonbav.png"
         platform="GitHub"
         link="https://github.com/ethan-t-hansen/workout-manager"
       />
@@ -34,7 +34,7 @@ function ProjectContainer() {
           the click of a button"
         type="Stack:"
         stack="TypeScript, Next.js, React"
-        imgsrc="/tic-tac-toe.png"
+        imgsrc="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338782/tic-tac-toe_tecdkg.png"
         platform="GitHub"
         link="https://github.com/ethan-t-hansen/tic-tac-toe"
       />
@@ -45,7 +45,7 @@ function ProjectContainer() {
           and unit testing to create a user-friendly application to boost the efficacy of study sessions."
         type="Stack:"
         stack="Java, JUnit, Swing GUI"
-        imgsrc="/pomo-timer.png"
+        imgsrc="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338782/pomo-timer_gw8cvd.png"
         platform="GitHub"
         link="https://github.com/ethan-t-hansen/pomo-timer"
       />
@@ -107,7 +107,7 @@ function DesignContainer() {
         I led and undertook the development of promotional graphics, branding, and the website."
         type="Software used:"
         stack="Illustrator, Photoshop, Figma, SquareSpace (HTML + CSS)"
-        imgsrc="/nscc-pic.png"
+        imgsrc="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338783/nscc-pic_tgspcc.png"
         platform="[UNKNOWN]"
         link=""
       />

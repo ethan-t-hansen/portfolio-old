@@ -15,6 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel='icon' href='https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338779/ethan-logo_g37rvn.png'/>
+      </head>
+
       <body className={inter.className}>{children}</body>
     </html>
   )

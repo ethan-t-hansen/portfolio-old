@@ -23,7 +23,7 @@ const ProjectCard: React.FC<CardProps> = (props) => {
       <div className="proj-img">
         {props.imgsrc === "" ? (
           <Image
-          src={'/placeholder.png'}
+          src={'https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338781/placeholder_qmjfeb.png'}
           alt="Project Image"
           width={800}
           height={800}

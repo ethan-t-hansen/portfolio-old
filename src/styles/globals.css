@@ -57,7 +57,7 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("/bg.png");
+  background-image: url("https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338780/bg_bee1i7.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -72,12 +72,12 @@
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("/bg-sideways.png");
+  background-image: url("https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338781/bg-sideways_mipl9i.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 50px;
+  padding: 30px;
   flex-wrap:wrap;
 }
 
@@ -161,10 +161,16 @@
 /* Works Page */
 
 .proj-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+
+@media (max-width: 800px) {
+  .proj-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .selector-container {
@@ -223,8 +229,8 @@
 }
 
 .proj-img {
-  min-width: 400px;
-  min-height: 300px;
+  min-width: 200px;
+  min-height: 150px;
   width: 100%;
 }
 
@@ -313,7 +319,7 @@ br {
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("/bg.png");
+  background-image: url("https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338780/bg_bee1i7.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

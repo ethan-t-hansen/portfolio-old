@@ -16,7 +16,7 @@ export default function Home() {
 
             <h3 className="subheading">Development | Design | Data</h3>
 
-            <Image src="/ellipse.svg" width={8} height={8} alt="Ellipse" />
+            <Image src="https://res.cloudinary.com/dggcsrnyf/image/upload/v1688338779/ellipse_hc8bka.svg" width={8} height={8} alt="Ellipse" />
             <div className="directory">
               <ScrollButton targetId="works" buttonText="works" />
               <ScrollButton targetId="experience" buttonText="experience" />
