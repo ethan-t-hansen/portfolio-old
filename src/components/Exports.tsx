@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
-import ProjectContainer from "./ProjectContainer";
-import UIUXContainer from "./UIUXContainer";
-import DesignContainer from "./DesignContainer";
+import { ProjectContainer, DesignContainer, UIUXContainer} from "./ProjectContainer";
+import Experience from "./Experience";
+import Contact from "./Contact";
 import Selector from "./Selector";
 import ScrollButton from "./ScrollButton";
 
@@ -11,5 +11,7 @@ export {
     UIUXContainer,
     DesignContainer,
     Selector,
-    ScrollButton
+    ScrollButton,
+    Experience,
+    Contact
 }

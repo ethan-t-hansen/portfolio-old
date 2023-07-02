@@ -7,9 +7,17 @@ interface CardProps {
   stack: string;
   imgsrc: string;
   platform: string;
+  link: string;
 }
 
 const ProjectCard: React.FC<CardProps> = (props) => {
+
+  function redirect(link: string) {
+    if (link !== "") {
+      window.open(link);
+    }
+  }
+
   return (
     <div className="box">
       <div className="proj-img">
@@ -41,7 +49,7 @@ const ProjectCard: React.FC<CardProps> = (props) => {
         <p className="p-text"> {props.stack} </p>
       </div>
       <div>
-        <h3> {">"} See more details </h3>
+        <button onClick={() => redirect(props.link)}> {">"} See more details </button>
       </div>
     </div>
   );
