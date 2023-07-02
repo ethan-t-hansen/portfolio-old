@@ -7,11 +7,11 @@ export default function DesignContainer() {
       <ProjectCard
         title="THE NSCC"
         desc="Founded in 2013, the National Strategy Consulting Competition and Conference is the largest undergraduate case 
-        competition and conference at the University of British Columbia. Spearheading design and marketing for 2 consecutive terms,
-        I had the privilege of undertaking projects and graphics alike."
+        competition and conference at the University of British Columbia. As the organization's director of marketing and design,
+        I led and undertook the development of promotional graphics, branding, and the website."
         type="Software used:"
         stack="Illustrator, Photoshop, Figma, SquareSpace (HTML + CSS)"
-        imgsrc="/nscc.png"
+        imgsrc="/nscc-pic.png"
         platform="[UNKNOWN]"
       />
       <ProjectCard

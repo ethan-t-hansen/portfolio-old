@@ -8,6 +8,7 @@
 
 * {
   font-family: 'Raleway', Helvetica, sans-serif;
+  color:#1e1e1e;
   /* border: 1px solid red; */
 }
 
@@ -44,19 +45,46 @@
   align-items: center;
   justify-content: center;
   width: 100vw;
-  height: 250vh;
+  height: 100%;
   padding: 30px;
   min-height: 50vh;
   min-width: 30vw;
 }
 
-.border {
+.exp-bg {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100%;
+  padding: 30px;
+  min-height: 50vh;
+  min-width: 30vw;
+}
+
+.border-home {
   border: 2px solid;
   border-color: #666666;
   height: 100%;
   width: 100%;
   position: relative;
-  background-image: url("../../public/bg.svg");
+  background-image: url("/bg.svg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 50px;
+  flex-wrap:wrap;
+}
+
+.border-info {
+  border: 2px solid;
+  border-color: #666666;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-image: url("/bg-sideways.png");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -92,11 +120,6 @@
 
 /* Text */
 
-
-.h1 .h2 .h3 .p {
-  color: #1e1e1e;
-}
-
 .heading {
   font-size: 4em;
   font-weight: 100;
@@ -105,6 +128,7 @@
   position: relative;
   white-space: nowrap;
   margin-bottom: 0.2em;
+  color:#1e1e1e;
 }
 
 .subheading {
@@ -141,7 +165,7 @@
   letter-spacing: 0;
   line-height: normal;
   position: relative;
-  margin-top: 2em;  
+  margin-top: 1.2em;  
   width: 100%;
   text-align: center;
 }
@@ -203,18 +227,16 @@
 
 .black-box {
   background-color: #1e1e1e;
-  min-width: 40vw;
+  min-width: 32vw;
   min-height: 300px;
   width: 100%;
   height: 50vh;
 }
 
 .proj-img {
-  min-width: 40vw;
+  min-width: 400px;
   min-height: 300px;
   width: 100%;
-  height: 50vh;
-  position: 'relative'; 
 }
 
 .image {
@@ -253,6 +275,45 @@
   line-height: normal;
   position: relative;
   margin-bottom: 1.2em;
+}
+
+/* Experience Page */
+
+.exp-section {
+  width: 40vw;
+  margin: 50px;
+}
+
+.exp-title {
+  font-size: 1.4em;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  white-space: nowrap;
+  text-transform: uppercase;
+  margin-top: 1.6em;
+  margin-bottom: 1em;
+}
+
+.exp-text {
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 0;
+  line-height: normal;
+  position: relative;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.exp-entry {
+  margin-bottom: 20px;
+}
+
+br {
+  display: block;
+  content: ""; /* clears default height */
+  margin-top: 10px;
 }
 
 /* Design Container */

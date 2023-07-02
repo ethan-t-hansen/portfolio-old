@@ -11,7 +11,7 @@ export default function ProjectContainer() {
           in the dish."
         type="Stack:"
         stack="TypeScript, Next.js, React, Express, MongoDB Atlas"
-        imgsrc=""
+        imgsrc="/u-trition.png"
         platform="GitHub"
       />
       <ProjectCard

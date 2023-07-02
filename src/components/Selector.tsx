@@ -10,9 +10,9 @@ export default function Selector() {
   const [selectedOption, setSelectedOption] = useState("coding");
 
   const options = [
-    { name: "Coding projects", id: "coding", icon: Dot },
+    { name: "Coding Projects", id: "coding", icon: Dot },
     { name: "UI/UX", id: "ui", icon: Dot },
-    { name: "Design pieces", id: "design", icon: Dot },
+    { name: "Design Pieces", id: "design", icon: Dot },
   ];
 
   return (
@@ -31,7 +31,7 @@ export default function Selector() {
             <button
               key={option.name}
               onClick={() => setSelectedOption(option.id)}
-            >
+            > 
               <p className="selector-text"> {option.name} </p>
             </button>
           </div>

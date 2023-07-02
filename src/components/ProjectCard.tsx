@@ -12,19 +12,28 @@ interface CardProps {
 const ProjectCard: React.FC<CardProps> = (props) => {
   return (
     <div className="box">
-      {props.imgsrc === "" ? (
-        <div className="black-box"></div>
-      ) : (
-        <div className="proj-img">
-            <Image
-            src={props.imgsrc}
-            alt="Project Image"
-            width={1000}
-            height={0}
-            className={'image'}
-            />
-        </div>
-      )}
+      <div className="proj-img">
+        {props.imgsrc === "" ? (
+          <Image
+          src={'/placeholder.png'}
+          alt="Project Image"
+          width={800}
+          height={800}
+          className={'image'}
+          style={{objectFit: "contain"}}
+        />
+
+        ) : (
+              <Image
+                src={props.imgsrc}
+                alt="Project Image"
+                width={800}
+                height={800}
+                className={'image'}
+                style={{objectFit: "contain"}}
+              />
+        )}
+      </div>
       <h2 className="proj-title"> {props.title} </h2>
       <p className="p-text"> {props.desc} </p>
       <div>
